@@ -19,6 +19,11 @@ function App() {
         </div>
         <div className='RegisterContainer'>
           <h2>登録エリア</h2>
+          <div className='InOutButton'>
+            <button>収入</button>
+            <button>支出</button>
+          </div>
+          <input type="date" />
         </div>
       </div>
     </>
