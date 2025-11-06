@@ -47,3 +47,24 @@
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
+.InOutButton div {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #4c9baf;
+  color: white;
+}
+
+.InOutButton span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+.ActiveButton {
+  background-color: #127f33 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: #4caaaf solid 5px;
+}

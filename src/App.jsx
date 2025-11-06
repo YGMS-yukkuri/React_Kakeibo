@@ -20,8 +20,8 @@ function App() {
         <div className='RegisterContainer'>
           <h2>登録エリア</h2>
           <div className='InOutButton'>
-            <button>収入</button>
-            <button>支出</button>
+            <div id='InButton' className='ActiveButton'><span>収入</span></div>
+            <div id='OutButton' className=''><span>支出</span></div>
           </div>
           <input type="date" />
         </div>
