@@ -1,0 +1,21 @@
+.InOutContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #e4e4e4a7;
+}
+
+th {
+    background-color: #4b40407c;
+    text-align: left;
+}
