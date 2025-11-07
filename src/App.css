@@ -7,64 +7,12 @@
 
 .AppContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: rgb(105, 123, 124);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
-}
-.InOutContainer {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
   gap: 2rem;
-}
-
-.RegisterContainer {
-  margin-top: 2rem;
-}
-
-.RegisterContainer select {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.InOutButton {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.RegisterContainer input[type="date"] {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.InOutButton div {
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  user-select: none;
-  background-color: #4c9baf;
-  color: white;
-}
-
-.InOutButton span {
-  font-size: 1.2rem;
-  font-weight: bold;
-  
-}
-
-.ActiveButton {
-  background-color: #127f33 !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: #4caaaf solid 5px;
 }

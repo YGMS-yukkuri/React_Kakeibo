@@ -1,0 +1,64 @@
+.InOutButton {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.RegisterContainer {
+    background: #49333350;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.RegisterContainer input {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: stretch;
+}
+
+.InOutButton div {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #4c9baf;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: stretch;
+}
+
+.InOutButton span {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.ActiveButton {
+    background-color: #127f33 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #4caaaf solid 5px;
+}
+
+.RegisterContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RegisterContainer button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4c9baf;
+    color: white;
+    cursor: pointer;
+}

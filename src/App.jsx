@@ -1,33 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+import Registerdata from './components/Registerdata/Registerdata';
+import InOutWindow from './components/InOutWindow/InOutWindow';
+
 
 function App() {
+  const [ActiveIn, setActiveIn] = useState(true);
 
   return (
     <>
+      <header className='AppHeader'>
+        <h1>家計簿アプリ</h1>
+      </header>
       <div className='AppContainer'>
-        <header className='AppHeader'>
-          <h1>家計簿アプリ</h1>
-        </header>
-        <div className='InOutContainer'>
-          <div>
-            <h2>収入タブ</h2>
-          </div>
-          <div>
-            <h2>支出タブ</h2>
-          </div>
-        </div>
-        <div className='RegisterContainer'>
-          <h2>登録エリア</h2>
-          <div className='InOutButton'>
-            <div id='InButton' className='ActiveButton'><span>収入</span></div>
-            <div id='OutButton' className=''><span>支出</span></div>
-          </div>
-          <input type="date" />
-        </div>
+        <InOutWindow />
+        <Registerdata ActiveIn={ActiveIn} setActiveIn={setActiveIn} />
       </div>
     </>
   )
 }
-
 export default App
