@@ -18,19 +18,31 @@ export default function Registerdata({ ActiveIn, setActiveIn, setInOutData, InOu
             outButton.classList.add('ActiveButton');
         }
     }, [ActiveIn]);
-    
+
     function handleSubmit(e) {
         e.preventDefault();
-        const amountNumber = amount === "" ? 0 : Number(amount);
-        const newInOutData = {
-            id: InOutId,
-            date: date,
-            memo: memo,
-            amount: amountNumber,
+        if (ActiveIn) {
+            const amountNumber = Number(amount);
+            const newInOutData = {
+                id: InOutId,
+                date: date,
+                memo: memo,
+                amount: amountNumber,
+            }
+            setInOutData(prevData => [...prevData, newInOutData]);
+            
+        } else {
+            const amountNumber = (0 - Number(amount));
+            const newInOutData = {
+                id: InOutId,
+                date: date,
+                memo: memo,
+                amount: amountNumber,
+            }
+            setInOutData(prevData => [...prevData, newInOutData]);
+            
         }
-        setInOutData(prevData => [...prevData, newInOutData]);
         setInOutId(InOutId + 1);
-        alert(JSON.stringify(newInOutData));
         // 登録後に入力をクリア
         setMemo("");
         setAmount("");
