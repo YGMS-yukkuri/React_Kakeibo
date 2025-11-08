@@ -1,7 +1,12 @@
 import React from 'react'
 import './InOutWindow.css';
 
-export default function InOutWindow() {
+export default function InOutWindow({ InOutData }) {
+
+    
+
+
+
     return (
         <>
             <div className='InOutWindow'>

@@ -16,7 +16,7 @@ function App() {
         <h1>家計簿アプリ</h1>
       </header>
       <div className='AppContainer'>
-        <InOutWindow />
+        <InOutWindow InOutData={InOutData} />
         <Registerdata ActiveIn={ActiveIn} setActiveIn={setActiveIn} setInOutData={setInOutData} InOutId={InOutId} setInOutId={setInOutId} />
       </div>
     </>
