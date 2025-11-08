@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, use } from 'react'
 import './App.css'
 import Registerdata from './components/Registerdata/Registerdata';
 import InOutWindow from './components/InOutWindow/InOutWindow';
@@ -6,6 +6,9 @@ import InOutWindow from './components/InOutWindow/InOutWindow';
 
 function App() {
   const [ActiveIn, setActiveIn] = useState(true);
+  const [InOutData, setInOutData] = useState([]);
+  const [InOutId, setInOutId] = useState(0);
+
 
   return (
     <>
@@ -14,7 +17,7 @@ function App() {
       </header>
       <div className='AppContainer'>
         <InOutWindow />
-        <Registerdata ActiveIn={ActiveIn} setActiveIn={setActiveIn} />
+        <Registerdata ActiveIn={ActiveIn} setActiveIn={setActiveIn} setInOutData={setInOutData} InOutId={InOutId} setInOutId={setInOutId} />
       </div>
     </>
   )
